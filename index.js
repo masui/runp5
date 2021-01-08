@@ -43,7 +43,7 @@ async function loadAllStyles2 (styles) {
     }
 }
 $(function(){
-    const args = {}
+    let args = {}
     document.location.search.substring(1).split('&').forEach((s) => {
 	let [name, value] = s.split('=')
 	args[name] = decodeURIComponent(value)

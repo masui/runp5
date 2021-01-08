@@ -49,7 +49,7 @@ $(function(){
 	args[name] = decodeURIComponent(value)
     })
     if(Object.keys(args).length != 0){
-	$(body).children.remove();
+	$('body').remove();
     }
     const codelist = args['code']
     const csslist = args['css']

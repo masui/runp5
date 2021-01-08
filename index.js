@@ -48,6 +48,7 @@ $(function(){
 	let [name, value] = s.split('=')
 	args[name] = decodeURIComponent(value)
     })
+    xxx = args;
     alert(Object.keys(args).length);
     if(Object.keys(args).length != 0){
 	$('body').children().remove();

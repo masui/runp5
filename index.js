@@ -50,7 +50,7 @@ $(function(){
     })
     if(Object.keys(args).length != 0){
 	$('body').children().remove();
-    }
+
     const codelist = args['code']
     const csslist = args['css']
     const p = args['p']
@@ -77,5 +77,6 @@ $(function(){
     if (p && slist) {
 	let styles = slist.split(/,/)
 	loadAllStyles2(styles)
+    }
     }
 })
